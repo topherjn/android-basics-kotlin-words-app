@@ -70,6 +70,7 @@ class LetterAdapter :
             // Create an action from WordList to DetailList
             // using the required arguments
             val action = LetterListFragmentDirections.actionLetterListFragmentToWordListFragment(letter = holder.button.text.toString())
+
             // Navigate using that action
             holder.view.findNavController().navigate(action)
         }
